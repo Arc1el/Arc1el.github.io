@@ -16,6 +16,7 @@ div.dropdown
 
 .droptable > td:nth-child(1) { width:2%; }
 .droptable > td:nth-child(1):hover { background-color: #399882; }
+.droptable > td:nth-child(1):hover .drop_c { display:block; }
 .droptable > td:nth-child(2) { width:4%; margin:0px}
 .droptable > td:nth-child(2):hover { background-color: #399882; }
 .droptable > td:nth-child(3) { width:4%; }
@@ -31,6 +32,8 @@ div.dropdown
 .droptable > td:nth-child(8) { width:2%; padding-left:8px; padding-right:8px; overflow: hidden;}
 .droptable > td:nth-child(9) { width:15%; text-align:left; border: 2px solid #75C5C1; background: white; overflow: hidden;}
 .droptable > td:nth-child(10) { width:4%; overflow: hidden;}
+
+td > div.drop_c { display:none;}
 
 .droptable > td:nth-child(9) > input
 {
@@ -58,3 +61,6 @@ div.dropdown
   font: 20px 'Roboto';
   text-shadow: 2px 2px #27B887;
 }
+
+.drop_c
+{display:none;}
