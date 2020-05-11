@@ -14,36 +14,34 @@ div.dropdown
   box-shadow : 5px 5px 20px #807E68;
 }
 
-.droptable > td
-{
-  border-right: 1px solid #807E68;
-}
-
 .droptable > td:nth-child(1) { width:2%; }
-.droptable > td:nth-child(2) { width:4%; }
+.droptable > td:nth-child(1):hover { background-color: #399882; }
+.droptable > td:nth-child(2) { width:4%; margin:0px}
+.droptable > td:nth-child(2):hover { background-color: #399882; }
 .droptable > td:nth-child(3) { width:4%; }
+.droptable > td:nth-child(3):hover { background-color: #399882; }
 .droptable > td:nth-child(4) { width:6.66%; }
+.droptable > td:nth-child(4):hover { background-color: #399882; }
 .droptable > td:nth-child(5) { width:6.66%; }
+.droptable > td:nth-child(5):hover { background-color: #399882; }
 .droptable > td:nth-child(6) { width:6.66%; }
-.droptable > td:nth-child(7) { width:2%; border:0px; padding-left:8px;
-                               padding-right:8px; }
-.droptable > td:nth-child(8) { width:15%; border:0px;
-                               text-align:left;
-  	                           border: 2px solid #75C5C1;
-  	                           background: white;}
-.droptable > td:nth-child(9) { width:4%; border:0px; }
-.droptable > td:nth-child(10) { border: 0px;}
+.droptable > td:nth-child(6):hover { background-color: #399882; }
+.droptable > td:nth-child(7) { width:6.66%; }
+.droptable > td:nth-child(7):hover { background-color: #399882; }
+.droptable > td:nth-child(8) { width:2%; padding-left:8px; padding-right:8px; overflow: hidden;}
+.droptable > td:nth-child(9) { width:15%; text-align:left; border: 2px solid #75C5C1; background: white; overflow: hidden;}
+.droptable > td:nth-child(10) { width:4%; overflow: hidden;}
 
-.droptable > td:nth-child(8) > input
+.droptable > td:nth-child(9) > input
 {
   width:97%; height:70%;
 	margin: 6px 0 0 9px;
 	border: 0;
 	font-size: auto;
 	outline: none;
+  overflow: hidden;
 }
-
-.droptable > td:nth-child(9) > input
+.droptable > td:nth-child(10) > input
 {
   width: 54px; height: 40px; border: 0;
 	background: #399882;
@@ -51,6 +49,7 @@ div.dropdown
 	font-weight: bold;
 	border-radius: 2px;
 	cursor: pointer;
+  overflow: hidden;
 }
 .droptable
 {
