@@ -62,7 +62,6 @@ ul.menu_html li{
 ul:nth-child(8){
   vertical-align:middle; margin-bottom:4px; margin-top: 4px;
 }
-
 ul:nth-child(8) > input:nth-child(1){
   font-size: auto;
   height : 30px;
@@ -73,7 +72,6 @@ ul:nth-child(8) > input:nth-child(1){
   border: 2px solid #75C5C1;
   background: white;
 }
-
 ul:nth-child(8) > input:nth-child(2){
   width: 50px; height: 30px; border: 0px;
 	background: #399882;
