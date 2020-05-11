@@ -24,9 +24,6 @@ div.dropdown
 .dropdown ul:hover {background-color: #399882}
 .dropdown ul:nth-child(1):hover {background-color: #95C7BA}
 .dropdown ul:nth-child(8):hover {background-color: #95C7BA}
-.dropdown ul:nth-child(9):hover {background-color: #95C7BA}
-.dropdown ul:nth-child(9) {display : inline;}
-.dropdown ul:nth-child(10):hover {background-color: #95C7BA}
 
 
 .dropdown ul:hover li { display:block; }
@@ -61,20 +58,24 @@ ul.menu_html li{
   position: absolute;
   left : 400px;
 }
-ul:nth-child(9) > input{
-	font-size: auto;
+
+ul:nth-child(8){
+  vertical-align:middle; margin-bottom:4px; margin-top: 4px;
+}
+
+ul:nth-child(8) > input:nth-child(1){
+  font-size: auto;
   height : 30px;
 	outline: none;
   overflow: hidden;
   display:inline;
-  width:15%;
   text-align:left;
   border: 2px solid #75C5C1;
   background: white;
-  overflow: hidden;
 }
-ul:nth-child(10) > input{
-  width: 54px; height: 40px; border: 0;
+
+ul:nth-child(8) > input:nth-child(2){
+  width: 50px; height: 30px; border: 0px;
 	background: #399882;
 	color: white;
 	font-weight: bold;
