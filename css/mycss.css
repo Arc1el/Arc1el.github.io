@@ -35,75 +35,32 @@ ul.menu_c li{
   display: none;
   position: absolute;
   left : 54px;
-  height: 80px;
-  padding-top : 7px;
-  padding-left : 14px;
-  background-color: #399882;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
 ul.menu_cpp li{
   display: none;
   position: absolute;
   left : 96px;
-  height: 35px;
-  padding-top : 7px;
-  padding-left : 14px;
-  background-color: #399882;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
 ul.menu_unix li{
   display: none;
   position: absolute;
   left : 161px;
-  height: 35px;
-  padding-top : 7px;
-  padding-left : 14px;
-  background-color: #399882;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
 ul.menu_swift li{
   display: none;
   position: absolute;
   left : 235px;
-  height: 35px;
-  padding-top : 7px;
-  padding-left : 14px;
-  background-color: #399882;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
 ul.menu_py li{
   display: none;
   position: absolute;
   left : 309px;
-  height: 35px;
-  padding-top : 7px;
-  padding-left : 14px;
-  background-color: #399882;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
 ul.menu_html li{
   display: none;
   position: absolute;
   left : 400px;
-  height: 35px;
-  padding-top : 7px;
-  padding-left : 14px;
-  background-color: #399882;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
-
 ul:nth-child(9) > input{
 	font-size: auto;
   height : 30px;
@@ -124,7 +81,15 @@ ul:nth-child(10) > input{
 	border-radius: 2px;
 	cursor: pointer;
   overflow: hidden;
-    display:inline;
+  display:inline;
+}
+
+li .menu_div{
+  background-color: #399882;
+  padding: 5px 0px 5px 14px;
+  width : 150px;
+  box-shadow: 8px 8px 3px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .dropdown{
