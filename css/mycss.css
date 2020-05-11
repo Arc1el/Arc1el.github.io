@@ -1,0 +1,27 @@
+body
+{
+  background-color:#B8D6CB;
+}
+
+div.dropdown
+{
+  background-color:#95C7BA;
+  position:fixed;
+  top : 0px;
+  left : 0px;
+  width : 100%;
+  height : auto;
+  box-shadow : 5px 5px 20px #807E68;
+}
+
+.droptable > td
+{
+  border-right: 1px solid #807E68;
+}
+
+.droptable
+{
+  text-align:center;
+  color:white;
+  font: 20px 'Roboto';
+}
