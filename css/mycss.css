@@ -14,25 +14,21 @@ div.dropdown
   box-shadow : 5px 5px 20px #807E68;
 }
 
-.droptable > td
-{
-  border-right: 1px solid #807E68;
-}
-
 .droptable > td:nth-child(1) { width:2%; }
-.droptable > td:nth-child(2) { width:4%; }
+.droptable > td:nth-child(1):hover { background-color: #399882; }
+.droptable > td:nth-child(2) { width:4%; margin:0px}
+.droptable > td:nth-child(2):hover { background-color: #399882; }
 .droptable > td:nth-child(3) { width:4%; }
+.droptable > td:nth-child(3):hover { background-color: #399882; }
 .droptable > td:nth-child(4) { width:6.66%; }
+.droptable > td:nth-child(4):hover { background-color: #399882; }
 .droptable > td:nth-child(5) { width:6.66%; }
+.droptable > td:nth-child(5):hover { background-color: #399882; }
 .droptable > td:nth-child(6) { width:6.66%; }
-.droptable > td:nth-child(7) { width:2%; border:0px; padding-left:8px;
-                               padding-right:8px; }
-.droptable > td:nth-child(8) { width:15%; border:0px;
-                               text-align:left;
-  	                           border: 2px solid #75C5C1;
-  	                           background: white;}
-.droptable > td:nth-child(9) { width:4%; border:0px; }
-.droptable > td:nth-child(10) { border: 0px;}
+.droptable > td:nth-child(6):hover { background-color: #399882; }
+.droptable > td:nth-child(7) { width:2%; padding-left:8px; padding-right:8px; }
+.droptable > td:nth-child(8) { width:15%; text-align:left; border: 2px solid #75C5C1; background: white;}
+.droptable > td:nth-child(9) { width:4%;}
 
 .droptable > td:nth-child(8) > input
 {
