@@ -12,6 +12,8 @@ div.dropdown
   width : 100%;
   height : auto;
   box-shadow : 5px 5px 20px #807E68;
+  padding-left : 20%;
+  padding-right : 20%;
 }
 
 .dropdown ul {
@@ -73,7 +75,7 @@ ul:nth-child(8) > input:nth-child(1){
   background: white;
 }
 ul:nth-child(8) > input:nth-child(2){
-  width: 50px; height: 30px; border: 0px;
+  width: 60px; height: 30px; border: 0px;
 	background: #399882;
 	color: white;
 	font-weight: bold;
@@ -102,21 +104,32 @@ li .menu_div{
 {
   background-color: red;
   postion: absolute;
+  left : 50%;
   margin-top : 50px;
-  width : 100%;
   height : 100%;
   z-index: 2;
+  margin-left : 20%;
+  margin-right : 20%;
 }
 
-.layoutbox .title
+.layoutbox div.contents
 {
-  position : absolute;
   display : inline;
-  padding-top: 30px;
-  margin-top : 30px;
-  margin-left : 30px;
-  margin-right : 30px;
+  padding : 10px 10px 10px 10px;
   background-color : blue;
-  height : 20px;
-  z-index : 3;
+  height : auto;
+  width : 68%;
+  z-index : 4;
+  float : left;
+}
+
+.layoutbox div.rightmenu
+{
+  display : inline;
+  padding : 10px 10px 10px 10px;
+  background-color : green;
+  height : 100%;
+  width : 28%;
+  z-index : 4;
+  float : left;
 }
