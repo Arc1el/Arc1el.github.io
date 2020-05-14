@@ -1,19 +1,23 @@
 body
 {
   background-color:#B8D6CB;
+  margin-top: 60px;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: auto;
 }
 
 div.dropdown
 {
-  background-color:#95C7BA;
+  background-color:#383838;
   position: fixed;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
   top : 0px;
   left : 0px;
-  width : 100%;
   height : auto;
   box-shadow : 5px 5px 20px #807E68;
-  padding-left : 20%;
-  padding-right : 20%;
 }
 
 .dropdown ul {
@@ -23,9 +27,9 @@ div.dropdown
   padding-left:14px;
   padding-right:10px;
 }
-.dropdown ul:hover {background-color: #399882}
-.dropdown ul:nth-child(1):hover {background-color: #95C7BA}
-.dropdown ul:nth-child(8):hover {background-color: #95C7BA}
+.dropdown ul:hover {background-color: #BFA480}
+.dropdown ul:nth-child(1):hover {background-color: #383838}
+.dropdown ul:nth-child(8):hover {background-color: #383838}
 
 
 .dropdown ul:hover li { display:block; }
@@ -62,7 +66,10 @@ ul.menu_html li{
 }
 
 ul:nth-child(8){
-  vertical-align:middle; margin-bottom:4px; margin-top: 4px;
+  vertical-align:middle;
+  margin-bottom:4px;
+  margin-top: 4px;
+  overflow: hidden;
 }
 ul:nth-child(8) > input:nth-child(1){
   font-size: auto;
@@ -86,30 +93,29 @@ ul:nth-child(8) > input:nth-child(2){
 }
 
 li .menu_div{
-  background-color: #399882;
+  background-color: #BFA480;
   padding: 5px 0px 5px 14px;
   width : 150px;
   box-shadow: 8px 8px 3px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 10;
 }
 
 .dropdown{
   text-align:left;
   color:white;
   font: 20px 'Roboto';
-  text-shadow: 2px 2px #27B887;
+  text-shadow: 0px 1px #D6D6D6;
 }
 
 .layoutbox
 {
-  background-color: red;
+  background-color: #89ACC0;
   postion: absolute;
-  left : 50%;
-  margin-top : 50px;
+  width: 100%;
   height : 100%;
-  z-index: 2;
-  margin-left : 20%;
-  margin-right : 20%;
+  padding: 15px 15px 15px 15px;
+  outline: 5px dashed #E2F2EA;
+  outline-offset: 8px;
 }
 
 .layoutbox div.contents
@@ -117,8 +123,8 @@ li .menu_div{
   display : inline;
   padding : 10px 10px 10px 10px;
   background-color : blue;
-  height : auto;
-  width : 68%;
+  height : 100%;
+  width : 30%;
   z-index : 4;
   float : left;
 }
@@ -129,7 +135,7 @@ li .menu_div{
   padding : 10px 10px 10px 10px;
   background-color : green;
   height : 100%;
-  width : 28%;
+  width : 20%;
   z-index : 4;
-  float : left;
+  float : right;
 }
