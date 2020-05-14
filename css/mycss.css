@@ -10,11 +10,12 @@ div.dropdown{
   background-color:#383838;
   position: fixed;
   width: 100%;
+  padding-top: 8px;
   padding-left: 15%;
   padding-right: 15%;
   top : 0px;
   left : 0px;
-  line-height : 41px;
+  height: 38px;
   box-shadow : 5px 5px 20px #807E68;
 }
 .dropdown ul {
@@ -31,14 +32,14 @@ div.dropdown{
 .dropdown ul:nth-child(8):hover {background-color: #383838}
 .dropdown ul:hover li { display:block; }
 
-.dropdown:nth-child(1) { position: absolute; left: 12%; top: 5%;}
-ul.menu_c { position: absolute; left : 16%;}
-ul.menu_cpp { position: absolute; left: 20%; }
-ul.menu_unix { position: absolute; left: 25%; }
-ul.menu_swift { position: absolute; left: 31%; }
-ul.menu_py { position: absolute; left: 36%; }
-ul.menu_html { position: absolute; left: 44%; }
-ul.menu_searchbar { position: absolute; left: 31%; }
+ul.menu_home { position: absolute; left: 12%;; top: 5%;}
+ul.menu_c { position: absolute; left : 15%;}
+ul.menu_cpp { position: absolute; left: 18%; }
+ul.menu_unix { position: absolute; left: 21.8%; }
+ul.menu_swift { position: absolute; left: 26%; }
+ul.menu_py { position: absolute; left: 30%; }
+ul.menu_html { position: absolute; left: 35%; }
+ul.searchbar { position: absolute; left : 53%; }
 
 ul.menu_c li{
   display: none;
@@ -75,7 +76,7 @@ ul.searchbar{
   vertical-align: middle;
   margin-bottom: 4px;
   margin-top: 4px;
-  visibility: hidden;
+  visibility: visible;
 }
 ul:nth-child(8) > input:nth-child(1){
   font-size: auto;
