@@ -1,14 +1,12 @@
-body
-{
+body{
   background-color:#B8D6CB;
-  margin-top: 4%;
-  margin-left: 12%;
-  margin-right: 12%;
+  margin-top: 5%;
+  margin-left: 13%;
+  margin-right: 15%;
   width: auto;
 }
 
-div.dropdown
-{
+div.dropdown{
   background-color:#383838;
   position: fixed;
   width: 100%;
@@ -16,60 +14,68 @@ div.dropdown
   padding-right: 15%;
   top : 0px;
   left : 0px;
-  height : auto;
+  line-height : 41px;
   box-shadow : 5px 5px 20px #807E68;
 }
-
 .dropdown ul {
   vertical-align: middle;
   display: inline-block;
-  margin: 0px;
+  margin-top: 3px;
+  left : 30px;
   padding-left:14px;
   padding-right:10px;
+
 }
 .dropdown ul:hover {background-color: #BFA480}
 .dropdown ul:nth-child(1):hover {background-color: #383838}
 .dropdown ul:nth-child(8):hover {background-color: #383838}
-
-
 .dropdown ul:hover li { display:block; }
+
+.dropdown:nth-child(1) { position: absolute; left: 12%; top: 5%;}
+ul.menu_c { position: absolute; left : 16%;}
+ul.menu_cpp { position: absolute; left: 20%; }
+ul.menu_unix { position: absolute; left: 25%; }
+ul.menu_swift { position: absolute; left: 31%; }
+ul.menu_py { position: absolute; left: 36%; }
+ul.menu_html { position: absolute; left: 44%; }
+ul.menu_searchbar { position: absolute; left: 31%; }
 
 ul.menu_c li{
   display: none;
   position: absolute;
-  left : 54px;
+  left : 0;
 }
 ul.menu_cpp li{
   display: none;
   position: absolute;
-  left : 96px;
+  left: 0;
 }
 ul.menu_unix li{
   display: none;
   position: absolute;
-  left : 161px;
+  left: 0;
 }
 ul.menu_swift li{
   display: none;
   position: absolute;
-  left : 235px;
+  left : 0;
 }
 ul.menu_py li{
   display: none;
   position: absolute;
-  left : 309px;
+  left : 0;
 }
 ul.menu_html li{
   display: none;
   position: absolute;
-  left : 400px;
+  left : 0;
 }
 
-ul:nth-child(8){
-  vertical-align:middle;
-  margin-bottom:4px;
+ul.searchbar{
+  vertical-align: middle;
+  margin-bottom: 4px;
   margin-top: 4px;
-  overflow: hidden;
+  visibility: hidden;
 }
 ul:nth-child(8) > input:nth-child(1){
   font-size: auto;
@@ -106,9 +112,7 @@ li .menu_div{
   font: 20px 'Roboto';
   text-shadow: 0px 1px #D6D6D6;
 }
-
-.layoutbox
-{
+.layoutbox{
   background-color: #89ACC0;
   postion: absolute;
   width: 100%;
@@ -117,23 +121,19 @@ li .menu_div{
   outline: 5px dashed #E2F2EA;
   outline-offset: 8px;
 }
-
-.layoutbox div.contents
-{
+.layoutbox div.contents{
   display : inline;
   padding : 10px 10px 10px 10px;
-  background-color : blue;
+  background-color : #EDECD5;
   height : 100%;
-  width : 30%;
+  width : 75%;
   z-index : 4;
   float : left;
 }
-
-.layoutbox div.rightmenu
-{
+.layoutbox div.rightmenu{
   display : inline;
   padding : 10px 10px 10px 10px;
-  background-color : green;
+  background-color : #EDECD5;
   height : 100%;
   width : 20%;
   z-index : 4;
