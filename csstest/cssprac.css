@@ -1,0 +1,45 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main{
+  background-image:
+  linear-gradient(rgb(0,140,251), rgb(57,93,233));
+  overflow: hidden;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+div.tri{
+  background-color: rgb(65,94,230);
+  position : relative;
+  width :50vw;
+  height: 80vh;
+  top : 50vh;
+  left : 30%;
+  transform : rotate(-7deg);
+}
+div.tri::before{
+  content: '';
+  background-color: inherit;
+  position: absolute;
+  width : inherit;
+  height : 80vh;
+  left : -100%;
+  transform : rotate(-10deg);
+
+}
+div.tri::after{
+  content: '';
+  background-color: inherit;
+  position: absolute;
+  width: 80vw;
+  height: 80vh;
+  left : 70%;
+  top: -60px;
+  transform : rotate(-11deg);
+
+}
