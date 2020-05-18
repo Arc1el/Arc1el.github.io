@@ -1,0 +1,196 @@
+body {margin: 0px; }
+.header { position: relative; display: block;}
+.main { position: relative; display : block; top : 120px; }
+.footer { position: relative; display: block; top : 1470px; }
+
+/* 헤더 */
+#topBar{
+  background-color : rgb(210,210,210);
+  padding-left: 20%;
+  padding-right: 22%;
+  line-height: 30px;
+  text-align: right;
+}
+#searchBar{
+  position: absolute;
+  width : 1080px;
+  left: 50%;
+  margin-left: -540px;
+  margin-right: -540px;
+  display: block;
+  top : 30px;
+}
+  #category{
+    width : 120px;
+    height : 120px;
+    background-color: rgb(66,133,244);
+    display: inline-block;
+    text-align: center;
+    padding-top : 30px;
+  }
+      #category img{
+        height: 40px;
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+      #category span{
+        color: white;
+      }
+  #logo{
+    width : 200px;
+    height : 120px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+  }
+    #logo img{
+      width : 170px;
+    }
+  #search{
+    width : 480px;
+    height : 120px;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right : 50px;
+  }
+    #searchArea{
+      border-bottom: 3px;
+      border-bottom-color : red;
+      border-bottom-style: inset;
+    }
+      #searchArea input{
+        width : 400px;;
+        height : 50px;
+        border : 0px;
+	      font-weight: bold;
+	      font-size: 20px;
+        vertical-align: bottom;
+        display: inline-block;
+        background-color: rgba(0,0,0,0);
+      }
+        #searchArea #searchBtn{
+          display: inline-block;
+          background-color: rgba(0,0,0,0);
+          border : 0px;
+        }
+          #searchBtn img{
+            width : 50px;
+          }
+  #my{
+    width : 180px;
+    height : 120px;
+    display: inline-block;
+  }
+    #mypage{
+      text-align: center;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    #mypage img{
+      width : 40px;
+      display: inline-block;
+    }
+    #mypage span{
+      color: gray;
+    }
+    #mycart{
+      text-align: center;
+      display: inline-block;
+    }
+    #mycart img{
+      width : 50px;
+      display: inline-block;
+    }
+    #mycart span{
+      color: gray;
+    }
+
+/* 메인 */
+#mainAd{
+  position: absolute;
+  width : 100%;
+  background-color: rgb(236,212,199);
+  padding: 0px;
+  margin: 0px;
+  height : 450px;
+  display: block;
+}
+  #adArea{
+    position: absolute;
+    width : 1080px;
+    left: 50%;
+    margin-left: -540px;
+    margin-right: -540px;
+    display: block;
+    height : 450px;
+    }
+  #adArea img{
+    height : 400px;
+    display: inline-block;
+    float : left;
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+  #adArea span{
+    text-align: center;
+    margin-left: 120px;
+    color: rgb(65,60,56);
+    font-size: 40px;
+    font-weight: bold;
+    display : inline-block;
+    margin-top: 50px;
+  }
+#todaySale{
+  position: absolute;
+  top : 450px;
+  width : 1080px;
+  left: 50%;
+  margin-left: -540px;
+  margin-right: -540px;
+  display: block;
+  background-color: lightblue;
+  height : 450px;
+  padding : 10px 10px 10px 10px;
+}
+  #todaySale span{
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: underline;
+  }
+  #todaySale div{
+    background-color: gray;
+    width : 250px;
+    height : 400px;
+    padding-top: 30px;
+    margin-left: 10px;
+    margin-top : 10px;
+    text-align: center;
+    display: inline-block;
+  }
+  #todaySale img{
+    height: 300px;
+    width : 200px;
+    display: inline-block;
+  }
+#bestSeller{
+  position: absolute;
+  top : 900px;
+  width : 1080px;
+  left: 50%;
+  margin-left: -540px;
+  margin-right: -540px;
+  display: block;
+  background-color: purple;
+  height : 450px;
+}
+
+/* 푸터 */
+#footContents{
+  position: absolute;
+  width : 100%;
+  background-color: gray;
+  padding: 0px;
+  margin: 0px;
+  height : 80px;
+  display: block;
+}
