@@ -9,15 +9,46 @@
 <body>
   <div class="header">
     <div id="topBar">
-      <span>
-        <a href="./login.html">로그인</a>
-        <a href="./register.html">회원가입</a>
-      </span>
+      <form>
+        <label for="loginBtn">로그인</label>
+        <input type="checkbox" id="loginBtn"/>
+        <input type="reset" id="nologin" value="✕"/>
+        <div id="login">
+          <div id="loginForm">
+              <table id="loginTable">
+          			<tr>
+          				<td style="padding-bottom:5px; padding-top:5px; padding-right:5px;">
+                    <img src="./media/mail.png" height="35px"></td>
+          				<td><input type="text" name="id" id="idArea" size="10" placeholder="아이디(이메일)"></td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:5px; padding-top:5px; padding-right:5px;" width="35px">
+                    <img src="./media/passwd.png" height="35px"></td>
+                  <td><input type="password" name="passwd" id="passwdArea" placeholder="비밀번호"></td>
+          			</tr>
+                <tr>
+                  <td style="padding-bottom:5px; padding-top:5px;" colspan="2">
+                    <input type="checkbox" id="autologin"/><label for="autologin"> 자동로그인</label></td>
+               </tr>
+                <tr>
+                  <td style="padding-bottom:5px; padding-top:5px;" colspan="2">
+                    <input type="submit" id="popLogin" value="로그인"/></td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:5px; padding-top:5px;" colspan="2">
+                    <input type="button" id="popRegister" value="회원가입"/></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        <span>회원가입</span>
+      </form>
     </div>
     <div id="searchBar">
       <div id="category">
         <img src="./media/category.png"><br>
         <span>카테고리</span>
+        <div id="dropcate"></div>
       </div>
       <div id="logo">
         <img src="./media/logo.png">
@@ -44,17 +75,42 @@
   </div>
   <div class="main">
     <div id="mainAd">
+      <div id="fixedAd">
+        <div id="fixedCart">장바구니 ▶ 0</div><br>
+        <div id="fixedRecent">최근본 상품 0</div>
+        <span>최근본<br>상품이<br>없습니다.</span>
+      </div>
       <div id="adArea">
         <img src="./media/webbook.jpg">
         <span>BEST<br>따라만<br>하면<br>당신도<br>HTML<br>마스터!</span>
         <span style="font-size: 15px; margin-left: 100px;">지금 사러가기 >></span>
       </div>
     <div id="todaySale">
-      <span>오늘만 특가!</span><br>
-      <div id="sale1"><img src="./media/cpp.jpg"></div>
-      <div id="sale2"><img src="./media/py.jpg"></div>
-      <div id="sale3"><img src="./media/unix.jpg"></div>
-      <div id="sale4"><img src="./media/swift.jpg"></div>
+      <span style="text-decoration : underline">오늘만 특가!</span><br>
+      <div class="sale"><img src="./media/cpp.jpg"><br>
+        <span>명품c++프로그래밍</span><br>
+        <span style="color: rgb(250,200,34)">☆★★★★</span><br>
+        <span style="text-decoration: line-through">30000</span>
+        <span style="color: red">25000원</span>
+      </div>
+      <div id="sale2"><img src="./media/py.jpg">
+        <span>실무자를위한 파이썬100제</span><br>
+        <span style="color : rgb(250,200,34)">☆☆★★★</span><br>
+        <span style="text-decoration: line-through">20000</span>
+        <span style="color: red">15000원</span>
+      </div>
+      <div id="sale3"><img src="./media/unix.jpg">
+        <span>유닉스시스템 프로그래밍</span><br>
+        <span style="color : rgb(250,200,34)">★★★★★</span><br>
+        <span style="text-decoration: line-through">25000</span>
+        <span style="color: red">18000원</span>
+      </div>
+      <div id="sale4"><img src="./media/swift.jpg">
+        <span>스위프트프로그래밍</span><br>
+        <span style="color : rgb(250,200,34)">★★★★★</span><br>
+        <span style="text-decoration: line-through">32000</span>
+        <span style="color: red">28000원</span>
+      </div>
     </div>
     <div id="bestSeller">this is bestSeller</div>
   </div>
