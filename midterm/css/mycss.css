@@ -11,6 +11,88 @@ body {margin: 0px; }
   line-height: 30px;
   text-align: right;
 }
+#nologin
+{
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top : 180px;
+  right : 580px;
+  z-index: 3;
+  border: 0px;
+  padding-top: 0px;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  visibility: hidden;
+}
+#loginBtn {
+	width: 60px;
+	height: 29px;
+	border: 0px;
+	outline: 0;
+	vertical-align: middle;
+  display: none;
+}
+#loginBtn:checked ~ #login{
+  width : 100%;
+  height: 1750px;
+  visibility: visible;
+}
+#loginBtn:checked ~ #nologin{
+  visibility: visible;
+}
+  #login{
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    height: 0px;
+    width : 100%;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(0,0,0,0.4);
+    transition: height 1s;
+    text-align: center;
+    vertical-align: middle;
+  }
+    #loginForm{
+      position: fixed;
+      top: 24%;
+      left: 50%;
+      margin-left: -250px;
+      padding: 30px;
+      height: 250px;
+      width: 500px;
+      background-color: white;
+      border-radius: 30px;
+    }
+      #loginTable
+      {
+        position: absolute;
+        top:9%;
+        width: 90%;
+      }
+      #idArea
+      {
+        width: 100%;
+        height: 35px;
+      }
+      #passwdArea
+      {
+        width: 100%;
+        height: 35px;
+      }
+      #popLogin
+      {
+        width: 100%;
+        height: 50px;
+      }
+      #popRegister
+      {
+        width: 100%;
+        height: 50px;
+      }
+
 #searchBar{
   position: absolute;
   width : 1080px;
@@ -18,24 +100,41 @@ body {margin: 0px; }
   margin-left: -540px;
   margin-right: -540px;
   display: block;
-  top : 30px;
+  top : 28px;
 }
   #category{
     width : 120px;
-    height : 120px;
+    height : 90px;
     background-color: rgb(66,133,244);
     display: inline-block;
     text-align: center;
-    padding-top : 30px;
+    padding-top : 20px;
+    margin-top : 10px;
   }
-      #category img{
-        height: 40px;
-        display: inline-block;
-        padding-bottom: 5px;
-      }
-      #category span{
-        color: white;
-      }
+  #category:hover div{
+    visibility: visible;
+    width: 1080px;
+    height : 450px;
+  }
+    #dropcate{
+      visibility: hidden;
+      position: absolute;
+      width : 0px;
+      height : 0px;
+      top: 122px;
+      box-shadow: -1px -1px 5px 1px rgb(0,0,0,0.2);
+      background-color: white;
+      z-index: 10;
+      transition: width 0.3s, height 0.3s;
+    }
+    #category img{
+      height: 40px;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    #category span{
+      color: white;
+    }
   #logo{
     width : 200px;
     height : 120px;
@@ -115,6 +214,41 @@ body {margin: 0px; }
   height : 450px;
   display: block;
 }
+  #fixedAd{
+    position: fixed;
+    top : 200px;
+    right : 250px;
+    width: 120px;
+    height: 350px;
+    background-color: white;
+    border: 2px solid rgb(192,192,192);
+    z-index: 0;
+  }
+    #fixedCart{
+      background-color: rgb(55,63,87);
+      width: 100%;
+      line-height: 35px;
+      text-align: center;
+      color: white;
+      font-size: 12px;
+      display: inline-block;
+    }
+    #fixedRecent{
+      background-color: rgb(55,63,87);
+      width: 100%;
+      line-height: 35px;
+      text-align: center;
+      color: white;
+      font-size: 12px;
+      display: inline-block;
+    }
+    #fixedAd span{
+      text-align: center;
+      width: 100%;
+      display: inline-block;
+      margin-top: 70%;
+      color: rgb(192,192,192);
+    }
   #adArea{
     position: absolute;
     width : 1080px;
@@ -130,6 +264,9 @@ body {margin: 0px; }
     float : left;
     margin-left: 150px;
     margin-top: 20px;
+  }
+  #adArea img:hover{
+    transform: scale(1.1, 1.1);
   }
   #adArea span{
     text-align: center;
@@ -148,33 +285,39 @@ body {margin: 0px; }
   margin-left: -540px;
   margin-right: -540px;
   display: block;
-  background-color: lightblue;
   height : 450px;
   padding : 10px 10px 10px 10px;
 }
   #todaySale span{
     font-size: 20px;
     display: inline-block;
-    text-decoration: underline;
   }
   #todaySale div{
-    background-color: gray;
+    background-color: rgba(0,0,0,0.1);
     width : 250px;
     height : 400px;
     padding-top: 30px;
     margin-left: 10px;
-    margin-top : 10px;
+    margin-top : 15px;
     text-align: center;
     display: inline-block;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px;
   }
   #todaySale img{
     height: 300px;
     width : 200px;
     display: inline-block;
+    margin-bottom: 5px;
+    border: 2px solid rgb(192,192,192);
   }
+  #todaySale img:hover{
+    transform: skewY(10deg);
+  }
+
 #bestSeller{
   position: absolute;
-  top : 900px;
+  top : 950px;
   width : 1080px;
   left: 50%;
   margin-left: -540px;
