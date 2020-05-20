@@ -129,7 +129,8 @@ body {margin: 0px; font-family: 'Nanum Gothic'}
       box-shadow: -1px -1px 5px 1px rgb(0,0,0,0.2);
       background-color: white;
       z-index: 10;
-      transition: width 0.1s, height 0.1s;
+      transition: width 0.2s, height 0.2s;
+      overflow: hidden;
     }
     #cateTable
     {
@@ -339,9 +340,31 @@ body {margin: 0px; font-family: 'Nanum Gothic'}
   margin-left: -540px;
   margin-right: -540px;
   display: block;
-  background-color: purple;
-  height : 450px;
+  height : 100%;
 }
+  #week{
+    display : inline-block;
+    height : 100%;
+    width : 35%;
+    float: left;
+    margin: 10px;
+  }
+  #today{
+    display: inline-block;
+    height : 60%;
+    width : 61%;
+    float: left;
+    margin: 10px;
+    border: 1px solid rgb(64,64,64);
+  }
+  #discount{
+    display: inline-block;
+    height : 40%;
+    width : 61%;
+    float: left;
+    margin: 10px;
+    text-align: center;
+  }
 
 /* 푸터 */
 #footContents{
