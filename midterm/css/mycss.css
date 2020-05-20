@@ -1,4 +1,6 @@
-body {margin: 0px; }
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+
+body {margin: 0px; font-family: 'Nanum Gothic'}
 .header { position: relative; display: block;}
 .main { position: relative; display : block; top : 120px; }
 .footer { position: relative; display: block; top : 1470px; }
@@ -16,14 +18,16 @@ body {margin: 0px; }
   width: 60px;
   height: 60px;
   position: fixed;
-  top : 180px;
-  right : 580px;
+  top : 17%;
+  right : 28%;
+  margin-right : -60px;
   z-index: 3;
   border: 0px;
   padding-top: 0px;
   font-size: 30px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: white;
   visibility: hidden;
+  border-radius: 30px;
 }
 #loginBtn {
 	width: 60px;
@@ -125,8 +129,20 @@ body {margin: 0px; }
       box-shadow: -1px -1px 5px 1px rgb(0,0,0,0.2);
       background-color: white;
       z-index: 10;
-      transition: width 0.3s, height 0.3s;
+      transition: width 0.1s, height 0.1s;
     }
+    #cateTable
+    {
+      width: 100%;
+      height: 100%;
+    }
+    #cateTable th{
+      background-color: rgb(64,64,64);
+      text-align: left;
+      color: white;
+      padding-left: 10px;
+    }
+    #cateTable td { padding-left: 10px; }
     #category img{
       height: 40px;
       display: inline-block;
@@ -205,6 +221,41 @@ body {margin: 0px; }
     }
 
 /* 메인 */
+#fixedBar{
+  position: fixed;
+  top : 200px;
+  right : 15px;
+  width: 120px;
+  height: 350px;
+  background-color: white;
+  border: 2px solid rgb(192,192,192);
+  z-index: -1;
+}
+  #fixedCart{
+    background-color: rgb(55,63,87);
+    width: 100%;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    display: inline-block;
+  }
+  #fixedRecent{
+    background-color: rgb(55,63,87);
+    width: 100%;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    display: inline-block;
+  }
+  #fixedBar span{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin-top: 70%;
+    color: rgb(192,192,192);
+  }
 #mainAd{
   position: absolute;
   width : 100%;
@@ -214,41 +265,6 @@ body {margin: 0px; }
   height : 450px;
   display: block;
 }
-  #fixedAd{
-    position: fixed;
-    top : 200px;
-    right : 250px;
-    width: 120px;
-    height: 350px;
-    background-color: white;
-    border: 2px solid rgb(192,192,192);
-    z-index: 0;
-  }
-    #fixedCart{
-      background-color: rgb(55,63,87);
-      width: 100%;
-      line-height: 35px;
-      text-align: center;
-      color: white;
-      font-size: 12px;
-      display: inline-block;
-    }
-    #fixedRecent{
-      background-color: rgb(55,63,87);
-      width: 100%;
-      line-height: 35px;
-      text-align: center;
-      color: white;
-      font-size: 12px;
-      display: inline-block;
-    }
-    #fixedAd span{
-      text-align: center;
-      width: 100%;
-      display: inline-block;
-      margin-top: 70%;
-      color: rgb(192,192,192);
-    }
   #adArea{
     position: absolute;
     width : 1080px;
@@ -275,7 +291,7 @@ body {margin: 0px; }
     font-size: 40px;
     font-weight: bold;
     display : inline-block;
-    margin-top: 50px;
+    margin-top: 80px;
   }
 #todaySale{
   position: absolute;
