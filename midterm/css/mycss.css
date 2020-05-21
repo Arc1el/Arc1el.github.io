@@ -71,6 +71,9 @@ background-color: red;}
       background-color: white;
       border-radius: 30px;
     }
+      span a:link { text-decoration: none; color: black;}
+      span a:visited { text-decoration: none; color: black; }
+      
       #loginTable
       {
         position: absolute;
@@ -295,9 +298,21 @@ background-color: red;}
     border-top: 1px solid gray;
     }
     #regBasic{
-      background-color: orange;
       padding: 20px;
     }
+      .regInput
+      {
+        width: 200px;
+        height : 30px;
+        margin-bottom: 5px;
+      }
+    #regAgree{
+      padding: 20px;
+      height: 330px;
+      border-top: 1px solid gray;
+      border-bottom: 3px solid gray;
+    }
+
   #adArea img{
     height : 400px;
     display: inline-block;
