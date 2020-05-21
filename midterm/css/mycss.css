@@ -3,7 +3,8 @@
 body {margin: 0px; font-family: 'Nanum Gothic'}
 .header { position: relative; display: block;}
 .main { position: relative; display : block; top : 120px; }
-.footer { position: relative; display: block; top : 1470px; }
+.footer { position: relative; display: block; top : 1470px;
+background-color: red;}
 
 /* 헤더 */
 #topBar{
@@ -266,6 +267,14 @@ body {margin: 0px; font-family: 'Nanum Gothic'}
   height : 450px;
   display: block;
 }
+#mainRegister{
+  position: absolute;
+  width : 100%;
+  padding: 0px;
+  margin: 0px;
+  height : 450px;
+  display: block;
+}
   #adArea{
     position: absolute;
     width : 1080px;
@@ -274,6 +283,20 @@ body {margin: 0px; font-family: 'Nanum Gothic'}
     margin-right: -540px;
     display: block;
     height : 450px;
+    }
+  #registerArea{
+    position: absolute;
+    width : 1080px;
+    left: 50%;
+    margin-left: -540px;
+    margin-right: -540px;
+    display: block;
+    height : 1500px;
+    border-top: 1px solid gray;
+    }
+    #regBasic{
+      background-color: orange;
+      padding: 20px;
     }
   #adArea img{
     height : 400px;
@@ -369,10 +392,11 @@ body {margin: 0px; font-family: 'Nanum Gothic'}
 /* 푸터 */
 #footContents{
   position: absolute;
-  width : 100%;
-  background-color: gray;
-  padding: 0px;
-  margin: 0px;
-  height : 80px;
+  width : 1080px;
+  left: 50%;
+  margin-left: -550px;
+  background-color: rgb(210,210,210);
+  height : 120px;
   display: block;
+  padding: 10px;
 }
