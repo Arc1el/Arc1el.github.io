@@ -39,13 +39,17 @@
       var cubeNum = document.getElementById('cubeNum');
       var wannabe = document.getElementById('wannabe');
       var percentage = document.getElementById('percentage');
-      var result;
+      var result = 1;
+      var i;
 
       button.onclick = function ()
       {
-        result = getBlackLegn(cubeNum.value, wannabe.value);
-        percentage.value = result + "%";
-      };
+        for(i=0; i<wannabe.value; i++)
+        {
+          result -= getBlackLegn(cubeNum.value, i);
+        }
+      percentage.value = result + "%";
+      }
     };
   </script>
 </head>
