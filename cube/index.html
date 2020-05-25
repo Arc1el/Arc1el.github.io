@@ -32,7 +32,7 @@
           return 1 - Math.pow((1-0.0119), x);
         }
         else if (y!=1)
-          return 1 - Math.pow((1-0.0119), (x-y)) * Math.pow(0.0119, y) * combinations(x, y);
+          return Math.pow((1-0.0119), (x-y)) * Math.pow(0.0119, y) * combinations(x, y);
 
       };
       var button = document.getElementById('button');
