@@ -6,7 +6,7 @@
     window.onload = function()
     {
       function facto(n){
-        return (n != 1) ? n * factorial(n - 1) : 1;
+        return (n != 1) ? n * facto(n - 1) : 1;
       };
       function product_Range(a,b) {
         var prd = a,i = a;
@@ -16,16 +16,8 @@
         return prd;
       };
       function combinations(n, r){
-        if (n==r)
-        {
-          return 1;
-        }
-        else
-        {
-          r=(r < n-r) ? n-r : r;
-          return product_Range(r+1, n)/product_Range(1,n-r);
-        }
-      };
+        return facto(n)/facto(r)*facto(n-r);
+      }
       function getBlackLegn(x, y){
         if(y==0){
           return Math.pow((1-0.0119), x);
