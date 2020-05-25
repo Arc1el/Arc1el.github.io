@@ -28,7 +28,7 @@
       };
       function getBlackLegn(x, y){
         if(y==0){
-          return 1 - Math.pow((1-0.0119), x);
+          return Math.pow((1-0.0119), x);
         }
         else  {
           return Math.pow((1-0.0119), (x-y)) * Math.pow(0.0119, y) * combinations(x, y);
@@ -47,8 +47,6 @@
       {
         result = getBlackLegn(cubeNum.value, wannabe.value);
         percentage.value = result + "%";
-        result2 = combinations(cubeNum.value, wannabe.value);
-        combi.value = result2;
       };
     };
   </script>
@@ -59,6 +57,5 @@
   레전드리 원하는 아이템 갯수<input id="wannabe" type="text" value="1"/></br>
   <button id="button">계산!</button>
   <input id="percentage" type="text" value=""/><br>
-  <input id="combi" type="text" value=""/>
 </body>
 </html>
