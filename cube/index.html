@@ -39,6 +39,7 @@
       var cubeNum = document.getElementById('cubeNum');
       var wannabe = document.getElementById('wannabe');
       var percentage = document.getElementById('percentage');
+      var combi = document.getElemnetByID('combi');
       var result = 1;
       var i;
 
@@ -55,8 +56,10 @@
         {
           result = getBlackLegn(cubeNum.value, 0);
         }
-      percentage.value = result + "%";
-      result = 1;
+        percentage.value = result + "%";
+        combi.value = combinations(cubeNum.value, wannabe.value);
+        
+        result = 1;
       }
     };
   </script>
@@ -67,5 +70,6 @@
   레전드리 원하는 아이템 갯수<input id="wannabe" type="text" value="1"/></br>
   <button id="button">계산!</button>
   <input id="percentage" type="text" value=""/><br>
+  <input id="combi" type="text" value""/><br>
 </body>
 </html>
