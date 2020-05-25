@@ -44,11 +44,19 @@
 
       button.onclick = function ()
       {
-        for(i=0; i<wannabe.value; i++)
+        if(wannabe.value > 1)
         {
-          result -= getBlackLegn(cubeNum.value, i);
+          for(i=0; i<wannabe.value; i++)
+          {
+            result -= getBlackLegn(cubeNum.value, i);
+          }
+        }
+        else if(wannabe.value == 0)
+        {
+          result = getBlackLegn(cubeNum.value, 0);
         }
       percentage.value = result + "%";
+      result = 1;
       }
     };
   </script>
