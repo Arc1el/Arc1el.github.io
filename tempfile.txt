@@ -27,3 +27,41 @@ $(document).ready(function() {
   
   
 });
+
+
+----html----
+<span id="showspan">Host 'arcielweb' resolved to 1.1.1.1.</span>
+
+  <span id="hidespan"></span>
+  <div id="cursor">.</div>
+ 
+  <button id="funcbtn">click me
+  </button>
+  
+  ----css----
+  #hidespan {
+  border: 1px;
+  color: red;
+}
+#cursor{
+  display: inline-block;
+  background-color: green;
+  width: 10px;
+  color: green;
+}
+----js----
+$(document).ready(function() {
+
+	$("#showspan").hide();
+  $("#cursor").hide();
+	
+  var myArr = $("#showspan").text().split("");
+	var counter = 0;
+  
+  $("#funcbtn").click (function(){
+  	  $("#cursor").show();
+  	setInterval(function(){ if(counter < myArr.length) {$("#hidespan").text($("#hidespan").text() + myArr[counter]); counter++;} }, 3);
+  });
+  
+  
+});
