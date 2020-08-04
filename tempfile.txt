@@ -1,0 +1,29 @@
+----html----
+<div id="banner-message">
+  <span id="showspan">Host 'arcielweb' resolved to 1.1.1.1.</span>
+<span>Connection to 1.1.1.1:8000...
+Connection established.<br>
+To escape to , press 'Ctrl+Alt+]'.<br><br>
+
+Login : from 2.2.2.2<br></span>
+  <span id="hidespan"></span>
+  <button id="funcbtn">click me
+  </button>
+</div>
+
+
+
+----js-----
+$(document).ready(function() {
+
+	$("#showspan").hide();
+	
+  var myArr = $("#showspan").text().split("");
+	var counter = 0;
+  
+  $("#funcbtn").click (function(){
+  	setInterval(function(){ if(counter < myArr.length) {$("#hidespan").text($("#hidespan").text() + myArr[counter]); counter++;} }, 3);
+  });
+  
+  
+});
