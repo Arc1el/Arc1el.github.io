@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
+  <script src="./js/jquery-longclick.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/mycss.css">
+  <script type="text/javascript" src="./js/myjs.js"></script>
+</head>
+
+<body>
+  <script>
+  function selectbg(elemt){
+		if(elemt.attr("alt") == "forest")
+      document.getElementById('mainbox').style.backgroundImage = "url(./img/forest2.png)";
+    if(elemt.attr("alt") == "floor")
+      document.getElementById('mainbox').style.backgroundImage = "url(./img/floor.png)";
+  }
+  function cancelbg(elemt){
+    document.getElementById('selectdiv').style.zIndex = "-1";
+  }
+  </script>
+
+  <!-- 여기서부터 우측메뉴 -->
+  <div id="rightmenu">
+    <p>메뉴</p>
+    <div id="changebg">배경</div>&nbsp;
+    <div id="selectchar">캐릭터</div>&nbsp;
+    <div id="for1">for1</div>&nbsp;
+    <div id="for2">for2</div>&nbsp;
+    <div id="for3">for3</div>&nbsp;
+    <div id="for4">for4</div>&nbsp;
+    <div id="for5">for5</div>&nbsp;
+  </div>
+
+  <!-- 여기서부터 메인컨텐츠 박스 -->
+  <div id="mainbox">
+    <div id="innermain"></div>
+    <div id="save">저장</div>
+    <div id="delete">전체삭제</div>
+    <div id="cancel">1개삭제</div>
+  </div>
+
+  <!-- 여기서부터 우측메뉴를 클리하면 나오는 div -->
+  <div id="selectdiv">
+    <div id="bgselect">
+      <p>배경선택</p>
+      <div id="bglist">
+        <div><img src="./img/forest_flower1.png" alt="forest" width="150px" onclick="selectbg($(this))"></img><p>캔터베리숲</p></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div><img src="./img/table.png" alt="floor" width="150px" onclick="selectbg($(this))"></img><p>마룻바닥</p></div>
+      </div>
+      <div id="bgcancel" onclick="cancelbg()">닫기</div>
+    </div>
+  </div>
+</body>
+</html>
