@@ -1,0 +1,286 @@
+
+<doctype html!>
+<html>
+<head>
+  <title>이책어때</title>
+  <css type="text/css">
+    <link rel="stylesheet" href="./css/mycss.css">
+</head>
+<body>
+  <div class="header">
+    <div id="topBar">
+      <form method="get">
+        <label for="loginBtn">로그인</label>
+        <input type="checkbox" id="loginBtn"/>
+        <input type="reset" id="nologin" value="✕"/>
+        <div id="login">
+          <div id="loginForm">
+              <table id="loginTable">
+          			<tr>
+          				<td style="padding-bottom:5px; padding-top:5px; padding-right:5px;">
+                    <img src="./media/mail.png" height="35px"></td>
+          				<td><input type="text" name="id" id="idArea" size="10" placeholder="아이디(이메일)"></td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:5px; padding-top:5px; padding-right:5px;" width="35px">
+                    <img src="./media/passwd.png" height="35px"></td>
+                  <td><input type="password" name="passwd" id="passwdArea" placeholder="비밀번호"></td>
+          			</tr>
+                <tr>
+                  <td style="padding-bottom:5px; padding-top:5px;" colspan="2">
+                    <input type="checkbox" id="autologin"/><label for="autologin"> 자동로그인</label></td>
+               </tr>
+                <tr>
+                  <td style="padding-bottom:5px; padding-top:5px;" colspan="2">
+                    <input type="submit" id="popLogin" value="로그인"/></td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:5px; padding-top:5px;" colspan="2">
+                    <input type="button" id="popRegister" value="회원가입"/></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        &nbsp;<span><a href="./register.html">회원가입</a></span>
+      </form>
+    </div>
+    <div id="searchBar">
+      <div id="category">
+        <img src="./media/category.png"><br>
+        <span>카테고리</span>
+        <div id="dropcate">
+        <table id="cateTable">
+          <th colspan="2">국내도서</th><th colspan="2">외국도서</th>
+          <th>e-book</th><th>온라인 중고샵</th><th>음반/DVD</th>
+            <tr>
+              <td>유아</td><td><b>소설/시/희곡</td>
+              <td>영미도서</td><td>어학</td>
+              <td><b>소설/시</td>
+              <td>중고매장</td>
+              <td><b>가요</td>
+            </tr>
+            <tr>
+              <td>어린이</td><td>장르소설</td>
+              <td><b>경제경영</td><td>동화책</td>
+              <td>로맨스</td>
+              <td><b>중고국내도서</td>
+              <td>클래식</td>
+            </tr>
+            <tr>
+              <td>청소년</td><td><b>인문학</td>
+              <td>자기계발</td><td>오디오북</td>
+              <td>판타지/무협</td>
+              <td><b>소설/시/희곡</td>
+              <td>팝</td>
+            </tr>
+            <tr>
+              <td>여행</td><td>과학</td>
+              <td><b>자연과학</td><td>개념학습</td>
+              <td>만화</td>
+              <td><b>에세이</td>
+              <td>재즈</td>
+            </tr>
+            <tr>
+              <td><b>취미</td><td>자기계발</td>
+              <td><b>예술</td><td>교과학습</td>
+              <td>에세이</td>
+              <td>어린이</td>
+              <td>국악</td>
+            </tr>
+            <tr>
+              <td><b>참고서</td><td>대학교재</td>
+              <td>가정</td><td>코스북</td>
+              <td><b>자기계발</td>
+              <td>유아</td>
+              <td><b>월드뮤직</td>
+            </tr>
+            <tr>
+              <td>잡지</td><td><b>수험서</td>
+              <td>일본도서</td><td><b>수상작</td>
+              <td>경제경영</td>
+              <td><b>중고전집</td>
+              <td>종교/명상</td>
+            </tr>
+            <tr>
+              <td>역사</td><td>종교</td>
+              <td><b>청소년</td><td>코믹</td>
+              <td><b>인문학</td>
+              <td><b>경제경영</td>
+              <td>드라마</td>
+            </tr>
+            <tr>
+              <td>좋은부모</td><td>사회과학</td>
+              <td>실용</td><td>스포츠</td>
+              <td>사회과학</td>
+              <td><b>인문학</td>
+              <td><b>TV시리즈</td>
+            </tr>
+            <tr>
+              <td>에세이</td><td>전집</td>
+              <td>어린이사전</td><td>중국도서</td>
+              <td>역사</td>
+              <td><b>사회과학</td>
+              <td>액션/어드벤쳐</td>
+            </tr>
+            <tr>
+              <td>예술</td><td><b>외국어</td>
+              <td>희곡</td><td>해외잡지</td>
+              <td>청소년</td>
+              <td><b>중고음반/DVD</td>
+              <td><b>S.F/판타지</td>
+            </tr>
+          </th>
+        </table></div>
+      </div>
+      <div id="logo">
+        <a href="./index.html"><img src="./media/logo.png"></a>
+      </div>
+      <div id="search">
+        <div id="searchArea">
+          <input type="search"></input>
+          <button type="button" id="searchBtn">
+            <img src="./media/search.png">
+          </button>
+        </div>
+      </div>
+      <div id="my">
+        <div id="mypage">
+          <img src="./media/my.png"><br>
+          <span>마이페이지</span>
+        </div>
+        <div id="mycart">
+          <img src="./media/cart.png"><br>
+          <span>장바구니</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div id="fixedBar">
+      <div id="fixedCart">장바구니 ▶ 0</div><br>
+      <div id="fixedRecent">최근본 상품 0</div>
+      <span>최근본<br>상품이<br>없습니다.</span>
+    </div>
+    <div id="mainAd">
+      <div id="adArea">
+        <img src="./media/webbook.jpg">
+        <span>BEST<br>따라만<br>하면<br>당신도<br>HTML<br>마스터!</span>
+        <span style="font-size: 15px; margin-left: 100px;">지금 사러가기 >></span>
+      </div>
+    <div id="todaySale">
+      <span style="text-decoration : underline">오늘만 특가!</span><br>
+      <div class="sale"><img src="./media/cpp.jpg"><br>
+        <span>명품c++프로그래밍</span><br>
+        <span style="color: rgb(250,200,34)">☆★★★★</span><br>
+        <span style="text-decoration: line-through">30000</span>
+        <span style="color: red">25000원</span>
+      </div>
+      <div id="sale2"><img src="./media/py.jpg">
+        <span>실무자를위한 파이썬100제</span><br>
+        <span style="color : rgb(250,200,34)">☆☆★★★</span><br>
+        <span style="text-decoration: line-through">20000</span>
+        <span style="color: red">15000원</span>
+      </div>
+      <div id="sale3"><img src="./media/unix.jpg">
+        <span>유닉스시스템 프로그래밍</span><br>
+        <span style="color : rgb(250,200,34)">★★★★★</span><br>
+        <span style="text-decoration: line-through">25000</span>
+        <span style="color: red">18000원</span>
+      </div>
+      <div id="sale4"><img src="./media/swift.jpg">
+        <span>스위프트프로그래밍</span><br>
+        <span style="color : rgb(250,200,34)">★★★★★</span><br>
+        <span style="text-decoration: line-through">32000</span>
+        <span style="color: red">28000원</span>
+      </div>
+    </div>
+    <div id="bestSeller">
+      <div id="week">
+        <table border="1px" height="100%" style="border-collapse: collapse">
+          <tr>
+            <td height="40px" style="background-color: rgb(64,64,64);
+            text-align: left; color: white; padding-left: 10px;">
+            인문학 주간 베스트셀러 TOP10</td>
+          </tr>
+          <tr>
+            <td style="text-align: justify padding: 10px">
+              <img src="./media/bestsell1.jpg" width="100px" style="display: inline; float: left; margin: 5px;">
+              ① 우리에겐 기억할 것이 있다<br><br>"인권운동가 박래군의 한국현대사 인권기행"
+              30여 년간 인권운동가로 활동해 온 박래군이 한국현대사가 기록된 장소들을 찾았다.
+               그가 앞에 설 때마다 공간은 일상적 풍경의 한 겹 아래, 숨은 기억을 열어 보여준다.</td>
+          </tr>
+          <tr>
+            <td style="padding: 2px">
+              ② 이상하고 자유로운 할머니가 되고싶어</td>
+          </tr>
+          <tr>
+            <td style="padding: 2px">
+              ③ 트라우마 사전</td>
+          </tr>
+          <tr>
+            <td style="padding: 2px">
+              ④ 뉴턴의 아틀리에</td>
+          </tr>
+          <tr>
+            <td style="padding: 2px">
+              ⑤ 지적대화를 위한 넓고 얕은 지식</td>
+          </tr>
+          <tr>
+            <td style="padding: 2px">
+              ⑥ 공간이 만든 공간</td>
+          </tr>
+          <tr>
+            <td style="padding: 2px">
+              ⑦ 5.18 푸른눈의 증인</td>
+          </tr>
+          <tr>
+            <td style="padding: 2px">
+              ⑧ 유러피언</td>
+          </tr>
+          <tr>
+            <td style="padding: 2px">
+              ⑨ 21세기 사상의 최전선</td>
+          </tr>
+          <tr>
+            <td style="padding: 2px">
+              ⑩ 당신이 옳다</td>
+          </tr>
+        </table>
+      </div>
+      <div id="today">
+        <img src="./media/todaybook.jpg" height="100%"
+        style="display: inline; float: left; margin-right: 10px;">
+        <p>오늘의책</p>
+        <p>김수현 작가 4년 만의 신작</p>
+        <p style="padding-right: 10px;">『나는 나로 살기로 했다』 김수현 작가가 4년 만의 신작으로
+        돌아왔다. 이번에는 나를 지키는 관계 맺기를 이야기한다.
+        남에게 휘둘리지 않고 나다움을 지키는 법, 사소한 일에 날을 세우지 않고
+        마음을 언어로 표현하는 법. 조금 더 나답게 편안하게
+        관계 맺기를 시작해보자.</p>
+        <p>애쓰지 않고 편안하게<br>
+          김수현 저 | 놀<br>
+          13,500원(10% 할인) 포인트 750원</p>
+      </div>
+      <div id="discount">
+        <img src="./media/discount1.gif" width="100%"><br>
+        <img src="./media/discount2.gif" width="100%">
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div id="footContents">
+      <img src="./media/logo.png" height="85%" style="margin-left: 20px;
+      margin-right: 20px; display: inline-block; float: left;">
+      <span style="display: inline-block; float: left; margin-right: 50px;">
+        이책어때(주)<br>
+      대전시 서구 관저동로 **, 5~6층(관저동)<br>
+      대표 : 김현민 개인정보보호 책임자 : ***<br>
+      사업자 등록번호 : ***-**-***** 통신판매업신고 : 제 2020-*****호<br>
+      호스팅 서비스 사업자 : 이책어때(주)<br>
+      Copyright ⓒ Arc1el All Rights Reserved.</span>
+      <span style="padding-top: 25px; padding-right: 50px;font-size: 30px; float:right">
+        고객만족센터<br>T.1544-0000</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,271 @@
+
+<doctype html!>
+<html>
+<head>
+  <title>이책어때 :: 회원가입</title>
+  <css type="text/css">
+    <link rel="stylesheet" href="./css/mycss.css">
+</head>
+<body>
+  <div class="header">
+    <div id="topBar">
+      <form method="get">
+        <label for="loginBtn">로그인</label>
+        <input type="checkbox" id="loginBtn"/>
+        <input type="reset" id="nologin" value="✕"/>
+        <div id="login">
+          <div id="loginForm">
+              <table id="loginTable">
+          			<tr>
+          				<td style="padding-bottom:5px; padding-top:5px; padding-right:5px;">
+                    <img src="./media/mail.png" height="35px"></td>
+          				<td><input type="text" name="id" id="idArea" size="10" placeholder="아이디(이메일)"></td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:5px; padding-top:5px; padding-right:5px;" width="35px">
+                    <img src="./media/passwd.png" height="35px"></td>
+                  <td><input type="password" name="passwd" id="passwdArea" placeholder="비밀번호"></td>
+          			</tr>
+                <tr>
+                  <td style="padding-bottom:5px; padding-top:5px;" colspan="2">
+                    <input type="checkbox" id="autologin"/><label for="autologin"> 자동로그인</label></td>
+               </tr>
+                <tr>
+                  <td style="padding-bottom:5px; padding-top:5px;" colspan="2">
+                    <input type="submit" id="popLogin" value="로그인"/></td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom:5px; padding-top:5px;" colspan="2">
+                    <input type="button" id="popRegister" value="회원가입"/></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        &nbsp;<span><a href="./register.html">회원가입</a></span>
+      </form>
+    </div>
+    <div id="searchBar">
+      <div id="category">
+        <img src="./media/category.png"><br>
+        <span>카테고리</span>
+        <div id="dropcate">
+        <table id="cateTable">
+          <th colspan="2">국내도서</th><th colspan="2">외국도서</th>
+          <th>e-book</th><th>온라인 중고샵</th><th>음반/DVD</th>
+            <tr>
+              <td>유아</td><td><b>소설/시/희곡</td>
+              <td>영미도서</td><td>어학</td>
+              <td><b>소설/시</td>
+              <td>중고매장</td>
+              <td><b>가요</td>
+            </tr>
+            <tr>
+              <td>어린이</td><td>장르소설</td>
+              <td><b>경제경영</td><td>동화책</td>
+              <td>로맨스</td>
+              <td><b>중고국내도서</td>
+              <td>클래식</td>
+            </tr>
+            <tr>
+              <td>청소년</td><td><b>인문학</td>
+              <td>자기계발</td><td>오디오북</td>
+              <td>판타지/무협</td>
+              <td><b>소설/시/희곡</td>
+              <td>팝</td>
+            </tr>
+            <tr>
+              <td>여행</td><td>과학</td>
+              <td><b>자연과학</td><td>개념학습</td>
+              <td>만화</td>
+              <td><b>에세이</td>
+              <td>재즈</td>
+            </tr>
+            <tr>
+              <td><b>취미</td><td>자기계발</td>
+              <td><b>예술</td><td>교과학습</td>
+              <td>에세이</td>
+              <td>어린이</td>
+              <td>국악</td>
+            </tr>
+            <tr>
+              <td><b>참고서</td><td>대학교재</td>
+              <td>가정</td><td>코스북</td>
+              <td><b>자기계발</td>
+              <td>유아</td>
+              <td><b>월드뮤직</td>
+            </tr>
+            <tr>
+              <td>잡지</td><td><b>수험서</td>
+              <td>일본도서</td><td><b>수상작</td>
+              <td>경제경영</td>
+              <td><b>중고전집</td>
+              <td>종교/명상</td>
+            </tr>
+            <tr>
+              <td>역사</td><td>종교</td>
+              <td><b>청소년</td><td>코믹</td>
+              <td><b>인문학</td>
+              <td><b>경제경영</td>
+              <td>드라마</td>
+            </tr>
+            <tr>
+              <td>좋은부모</td><td>사회과학</td>
+              <td>실용</td><td>스포츠</td>
+              <td>사회과학</td>
+              <td><b>인문학</td>
+              <td><b>TV시리즈</td>
+            </tr>
+            <tr>
+              <td>에세이</td><td>전집</td>
+              <td>어린이사전</td><td>중국도서</td>
+              <td>역사</td>
+              <td><b>사회과학</td>
+              <td>액션/어드벤쳐</td>
+            </tr>
+            <tr>
+              <td>예술</td><td><b>외국어</td>
+              <td>희곡</td><td>해외잡지</td>
+              <td>청소년</td>
+              <td><b>중고음반/DVD</td>
+              <td><b>S.F/판타지</td>
+            </tr>
+          </th>
+        </table></div>
+      </div>
+      <div id="logo">
+        <a href="./index.html"><img src="./media/logo.png"></a>
+      </div>
+      <div id="search">
+        <div id="searchArea">
+          <input type="search"></input>
+          <button type="button" id="searchBtn">
+            <img src="./media/search.png">
+          </button>
+        </div>
+      </div>
+      <div id="my">
+        <div id="mypage">
+          <img src="./media/my.png"><br>
+          <span>마이페이지</span>
+        </div>
+        <div id="mycart">
+          <img src="./media/cart.png"><br>
+          <span>장바구니</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div id="mainRegister">
+      <div id="registerArea">
+        <form method="get">
+          <div style="border-bottom: 1px solid black; padding: 20px; margin-top: 80px; font-size: 20px;">이책어때 회원가입</div>
+          <div id="regBasic">
+            <span style="float:left; margin-right: 70px; font-size: 20px;">기본정보 입력</span>
+            <table style="display: inline-block;">
+        			<tr>
+        				<td>아이디</td>
+        				<td colspan="2"><input class="regInput" name="id_text" type="text"> <input name="id_check" type="button" value="중복확인"
+                  style="height: 30px; background-color: white; border: 1px solid gray; border-radius: 5px;"></td>
+        			</tr>
+        			<tr>
+        				<td>비밀번호</td>
+        				<td colspan="2"><input class="regInput" name="pass" type="password"></td>
+        			</tr>
+        			<tr>
+        				<td>비밀번호 확인</td>
+        				<td colspan="2"><input class="regInput" name="rePass" type="password"></td>
+        			</tr>
+        			<tr>
+        				<td>성명</td>
+        				<td colspan="2"><input class="regInput" type="text" name="name"></td>
+        			</tr>
+        			<tr>
+        				<td>생년월일</td>
+        				<td colspan="2"><input class="regInput" type="date"></td>
+        			</tr>
+              <tr>
+                <td>성별</td>
+        				<td colspan="2"><input type="radio" name="gender">남자&nbsp;<input type="radio" name="gender">여자<br></td>
+        			</tr>
+        			<tr>
+        				<td>이메일</td>
+        				<td colspan="2"><input name="mail_first" type="text" style="width: 100px; height: 30px;"> @
+                  <input class="regInput" name="mail_second" type="text" style="width: 100px; height: 30px;">
+        					<input type="text" list="mail" style="width: 70px; height: 30px;">
+        					<datalist id="mail">​
+        					<option value="gmail">​
+        					<option value="naver">​
+        					<option value="daum">​
+        					</datalist>
+        				</td>
+        			</tr>
+        			<tr>
+        				<td>주소</td>
+        				<td colspan="2"><input class="regInput" name="adress_text" type="text"> <input name="adress_check" type="button" value="주소찾기"
+                  style="height:30px; background-color: white; border: 1px solid gray; border-radius: 5px;"></td>
+        			</tr>
+        			<tr>
+        				<td>상세주소</td>
+        				<td colspan="2"><input class="regInput" type="text" name="adress_detail"></td>
+        			</tr>
+        			<tr>
+        				<td>휴대폰</td>
+        				<td colspan="2">
+        				<input type="radio" name="telecom" value="1">​LGT   <input type="radio" name="telecom" value="2">​SKT   <input type="radio" name="telecom" value="3">KT   <br>
+        				<input type="text" list="tel_num" style="width: 70px; height: 30px;">
+        					<datalist id="tel_num">​
+        					<option value="010">​
+        					<option value="011">​
+        					<option value="019">​
+        					</datalist>
+        				<input name="tel_second" type="text" style="width: 70px; height: 30px;">-<input name="tel_third" type="text" style="width: 70px; height: 30px;">
+                </td>
+        		</table>
+          </div>
+          <div id="regAgree">
+            <span style="float:left; margin-right: 115px; font-size: 20px; height: 100%;">약관동의</span>
+            <div>
+              <input type="checkbox" id="allAgree"/><label for="allAgree">모든 약관에 동의합니다.</label><br><br>
+              <p style="font-size: 12px;">필수 동의항목</p>
+              <input type="checkbox" id="siteAgree"/><label for="siteAgree">이책어때 이용약관</label><br>
+              <input type="checkbox" id="siteCommuAgree"/><label for="siteCommuAgree">이책어때 커뮤니티 이용약관</label><br>
+              <input type="checkbox" id="personal"/><label for="personal">개인정보 수집 및 이용</label><br>
+              <p style="font-size: 12px;">선택 동의항목</p>
+              <p style="font-size: 12px;">이벤트 적립금, 서비스 평가 적립금, 쿠폰 등의 이벤트 혜택을 드리는
+                 마케팅 정보를 수신할 채널을 선택해주세요.<br>(미선택시 혜택에서 제외될 수 있습니다)</p>
+                 <input type="checkbox" id="optionAgree"/><label for="optionAgree">선택적 개인 정보 수집 및 이용 동의</label><br>
+                 <input type="checkbox" id="pushAgree"/><label for="pushAgree">앱 푸시</label><br>
+                 <input type="checkbox" id="smsAgree"/><label for="smsAgree">문자/카카오톡</label><br>
+                 <input type="checkbox" id="mailAgree"/><label for="mailAgree">메일</label><br>
+                 <input type="checkbox" id="customAgree"/><label for="customAgree">관심 분야별 맞춤 뉴스레터 수신</label><br>
+               </div>
+             </div>
+           <div style="text-align : center; padding: 20px;">
+             <input name="register" type = "submit" value = "가입하기"
+             style="height: 45px; width: 200px; background-color: rgb(223,48,127); color: white; border: 0px; border-radius: 10px;"/>&nbsp;&nbsp;
+             <input name="retry" type = "reset" value = "다시 입력"
+             style="height: 45px; width: 200px; background-color: rgb(131,20,70); color: white; border: 0px; border-radius: 10px;"/>
+           </div>
+         </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div id="footContents">
+      <img src="./media/logo.png" height="85%" style="margin-left: 20px;
+      margin-right: 20px; display: inline-block; float: left;">
+      <span style="display: inline-block; float: left; margin-right: 50px;">
+        이책어때(주)<br>
+      대전시 서구 관저동로 **, 5~6층(관저동)<br>
+      대표 : 김현민 개인정보보호 책임자 : ***<br>
+      사업자 등록번호 : ***-**-***** 통신판매업신고 : 제 2020-*****호<br>
+      호스팅 서비스 사업자 : 이책어때(주)<br>
+      Copyright ⓒ Arc1el All Rights Reserved.</span>
+      <span style="padding-top: 25px; padding-right: 50px;font-size: 30px; float:right">
+        고객만족센터<br>T.1544-0000</span>
+    </div>
+  </div>
+</body>
+</html>

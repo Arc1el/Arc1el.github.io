@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>cube percentage</title>
+  <script>
+    window.onload = function()
+    {
+      function facto(n){
+        return (n != 1) ? n * facto(n - 1) : 1;
+      };
+      function product_Range(a,b) {
+        var prd = a,i = a;
+          while (i++< b) {
+          prd*=i;
+        }
+        return prd;
+      };
+      function combinations(n, r){
+        return facto(n)/(facto(r)*facto(n-r));
+      }
+      function getBlackLegn(x, y){
+        if(y==0){
+          return Math.pow((1-0.0119), x);
+        }
+        else  {
+          return Math.pow((1-0.0119), (x-y)) * Math.pow(0.0119, y) * combinations(x, y);
+        };
+
+      };
+      var button = document.getElementById('button');
+      var cubeNum = document.getElementById('cubeNum');
+      var wannabe = document.getElementById('wannabe');
+      var percentage = document.getElementById('percentage');
+      var combi = document.getElementById('combi');
+      var result = 1;
+      var i;
+
+      button.onclick = function ()
+      {
+        if(wannabe.value > 1)
+        {
+          for(i=0; i<wannabe.value; i++)
+          {
+            result -= getBlackLegn(cubeNum.value, i);
+          }
+        }
+        else
+        {
+          result = getBlackLegn(cubeNum.value, 0);
+        }
+        percentage.value = result + "%";
+        combi.value = combinations(cubeNum.value, wannabe.value);
+        
+        result = 1;
+      }
+    };
+  </script>
+</head>
+<body>
+  <h1 id="header">BlackCube calculator</h1>
+  사용할 큐브갯수 <input id="cubeNum" type="text" value="50"/><br>
+  레전드리 원하는 아이템 갯수<input id="wannabe" type="text" value="1"/></br>
+  <button id="button">계산!</button>
+  <input id="percentage" type="text" value=""/><br>
+  <input id="combi" type="text" value""/><br>
+</body>
+</html>
