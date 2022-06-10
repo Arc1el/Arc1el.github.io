@@ -8,18 +8,27 @@
     <title>Document</title>
 </head>
 <body>
-    <div class = "container">
-        <h1> I'm <span class="auto-type"></span></h1>
+    <div class = "typecontainer" id="removecon">
+        <h1 id="type"> I'm <span class="auto-type"></span></h1>
+    </div>
+    <div class = "container" id="visiblecon" style = "display: none;">
+        <h1 id="hide"> Hello World!</h1>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
+        
+
         var typed = new Typed(".auto-type", {
-            strings: ["Developer", "Designer", "Engineer", "Artist"],
-            typeSpeed: 80,
-            backSpeed: 100,
-            loop: false
+            strings: ["Developer"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            onComplete: function(self){
+                document.getElementById("removecon").remove();
+                document.getElementById("visiblecon").style.visibility = "visible";
+            }
         })
+
     </script>
 </body>
 </html>
