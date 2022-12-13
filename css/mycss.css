@@ -1,0 +1,79 @@
+/* 컬러 프리셋 추가 */
+:root {
+    --file-menu-main-color : #3c3c3c;
+    --file-menu-sub-color : #cccccc;
+    --contents-main-color : #1e1e1e;
+    --contents-sub-color : #333333;
+    --contents-sub-dark-color : #252526;
+    --status-bar-color : #007acc;
+    --status-bar-sub-color : #16825d;
+    --font-color-gray : #969696;
+}
+
+#menu_bar{
+    display:fixed;
+    top: 0;
+    background-color: var(--file-menu-main-color);
+    height: 3.5vh;
+    line-height: 3.5vh;
+    vertical-align: middle;
+    width: 100vw;
+}
+#menu_bar div{
+    float:left;
+    width: 33.3vw;
+}
+#menu_bar div:nth-child(2){
+    color : var(--font-color-gray);
+    text-align: center;
+}
+#menu_bar div:nth-child(3){
+    text-align: right;
+}
+
+#main_contents{
+    float:left;
+    background-color: var(--contents-main-color);
+    height : 94vh;
+    width : 100vw;
+}
+
+#nav_bar{
+    float: left;
+    background-color: var(--contents-sub-color);
+    width : 2.5vw;
+    height : 94vh;
+}
+#nav_explorer{
+    float: left;
+    background-color: var(--contents-sub-dark-color);
+    width : 10.5vw;
+    height : 94vh;
+}
+
+#status_bar{
+    display:fixed;
+    bottom: 0;
+    height: 2.5vh;
+    line-height: 2.5vh;
+    width : 100vw;
+    vertical-align: middle;
+    font-size: 0.8em;
+}
+
+#status_bar_left{
+    float: left;
+    background-color: var(--status-bar-sub-color);
+    height : 100%;
+    width : 2vw;
+    text-align: center;
+}
+
+#status_bar_right{
+    float: left;
+    background-color: var(--status-bar-color);
+    height : 100%;
+    width : 98vw;
+    color: white;
+    text-align: right;
+}
