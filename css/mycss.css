@@ -67,7 +67,41 @@
     float: left;
     background-color: var(--contents-sub-dark-color);
     width : 10.5vw;
+    min-width: 50px;
     height : 94.5vh;
+}
+@media (max-width: 768px) {
+    #main_contents{
+        float:left;
+        background-color: var(--contents-main-color);
+        height : 94vh;
+        width : 100vw;
+    }
+    #nav_bar{
+        float: left;
+        background-color: var(--contents-sub-color);
+        width : 2.5vw;
+        min-width: 50px;
+        height : 94.6vh;
+        text-align: center;
+        vertical-align: middle;
+    }
+    #nav_bar div{
+        padding: 0.4em;
+        float: left;
+        width: 2.5vw;
+        min-width: 50px;
+        height: 6vh;
+        text-align: center;
+        vertical-align: middle;
+    }
+    #nav_explorer{
+        float: left;
+        background-color: var(--contents-sub-dark-color);
+        width : calc(100vw - 50px);
+        min-width: 50px;
+        height : 8vh;
+    }
 }
 /* STATUS BAR */
 #status_bar{
