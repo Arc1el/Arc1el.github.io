@@ -15,11 +15,9 @@
     display:fixed;
     top: 0;
     background-color: var(--file-menu-main-color);
-    padding-top: 0.5em;
     height: 3.5vh;
     min-height: 22px;
     line-height: 3vh;
-    vertical-align: middle;
     width: 100vw;
 }
 #menu_bar div{
@@ -67,42 +65,19 @@
     float: left;
     background-color: var(--contents-sub-dark-color);
     width : 10.5vw;
-    min-width: 50px;
     height : 94.5vh;
 }
-@media (max-width: 768px) {
-    #main_contents{
-        float:left;
-        background-color: var(--contents-main-color);
-        height : 94vh;
-        width : 100vw;
-    }
+@media (max-width: 600px) {
     #nav_bar{
-        float: left;
-        background-color: var(--contents-sub-color);
         width : 2.5vw;
         min-width: 50px;
         height : 94.6vh;
-        text-align: center;
-        vertical-align: middle;
-    }
-    #nav_bar div{
-        padding: 0.4em;
-        float: left;
-        width: 2.5vw;
-        min-width: 50px;
-        height: 6vh;
-        text-align: center;
-        vertical-align: middle;
     }
     #nav_explorer{
-        float: left;
-        background-color: var(--contents-sub-dark-color);
         width : calc(100vw - 50px);
-        min-width: 50px;
-        height : 8vh;
+        height : 7vh;
     }
-}
+  }
 /* STATUS BAR */
 #status_bar{
     display:fixed;
@@ -118,7 +93,7 @@
     background-color: var(--status-bar-sub-color);
     height : 100%;
     width : 2vw;
-    min-width: 5%;
+    min-width: 10px;
     text-align: center;
 }
 #status_bar_right{
@@ -126,7 +101,6 @@
     background-color: var(--status-bar-color);
     height : 100%;
     width : 98vw;
-    max-width: 95%;
     color: white;
     text-align: right;
 }
